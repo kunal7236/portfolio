@@ -263,78 +263,23 @@ ul li:hover {
   color: var(--text-secondary);
 }
 
-.project-card {
-  background: rgba(30, 30, 36, 0.7);
-  padding: 1.5rem;
-  border-radius: var(--border-radius);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  margin-bottom: 2rem;
-  transition: var(--transition);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(78, 149, 255, 0.2);
-  position: relative;
-  overflow: hidden;
-}
 
-.project-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--primary), var(--secondary));
-  transition: var(--transition);
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  border-color: transparent;
-  background: rgba(30, 30, 36, 0.9);
-}
-
-.project-card:hover::before {
-  background: linear-gradient(to bottom, var(--accent), var(--secondary));
-}
-
-/* Rainbow border effect for project cards */
-.project-card.rainbow-border {
-  position: relative;
-  z-index: 0;
-}
-
-.project-card.rainbow-border::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  z-index: -1;
-  border-radius: calc(var(--border-radius) + 2px);
+#projects .rainbow-text {
   background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
+    to right,
+    rgba(58, 134, 255, 0.1),
+    rgba(131, 56, 236, 0.1)
   );
-  background-size: 400%;
-  animation: rainbow-border 20s linear infinite;
-  filter: blur(3px);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  color: var(--text-secondary);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.project-card.rainbow-border:hover::after {
-  opacity: 1;
+#projects .rainbow-text:hover{
+    transform: translateY(-5px);
+    transition: opacity 0.5s ease;
 }
+
 
 /* Rainbow border effect for about section text */
 .rainbow-text {
@@ -405,13 +350,13 @@ ul li:hover {
   }
 }
 
-.project-card h3 {
-  margin-top: 0;
+#projects .rainbow-text h3 {
+  margin-top: 10px;
   font-family: "Montserrat", sans-serif;
   color: var(--light);
 }
 
-.project-card p {
+#projects .rainbow-text p {
   color: var(--text-secondary);
   margin: 1rem 0;
 }
