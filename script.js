@@ -20,11 +20,4 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
   });
 
-  // Add rainbow border effect to project cards on hover
-  const projectCards = document.querySelectorAll(".project-card");
-
-  // Add rainbow border class to project cards
-  projectCards.forEach((card) => {
-    card.classList.add("rainbow-border");
-  });
 });
