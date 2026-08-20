@@ -3,324 +3,677 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kunal Kashyap - Portfolio</title>
+    <title>Kunal Kashyap — Software Engineer</title>
+    <meta
+      name="description"
+      content="Kunal Kashyap — Software Engineer Intern at Zluri. Frontend and full-stack engineering with React, TypeScript, Flutter and Python."
+    />
+    <meta name="theme-color" content="#0d1117" />
     <link rel="icon" type="image/jpg" href="portfolio.jpg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kunal Kashyap — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer Intern at Zluri. React, TypeScript, Flutter, Python."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.kunalka.me" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <header>
-      <div class="header-row">
-        <h1 class="animated-text">
-          <span class="letters">Kunal Kashyap</span>
-        </h1>
-        <a
-          href="https://drive.google.com/file/d/1V1zKCJAgJ67rRxspka6F3cRelpilCQwW/view?usp=sharing"
-          target="_blank"
-          class="resume-btn"
-          download
-          title="Download Resume"
-          ><i class="fas fa-file-text"></i
-        ></a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ────────────────  NAV  ──────────────── -->
+    <header class="topbar" id="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">KK</span>
+          <span class="brand-name">Kunal Kashyap</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Section navigation">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <a
+            class="btn btn-primary btn-sm"
+            href="https://drive.google.com/file/d/1zr8laOJMb4csQTKshwo9_ZhxkuVFYkba/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-regular fa-file-lines" aria-hidden="true"></i> Résumé
+          </a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="nav"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-      <p>
-        Computer Science & Engineering Undergraduate |<br />
-        Fullstack Flutter & API Developer
-      </p>
-      <nav>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#coding-profiles">Coding Profiles</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
-    <section id="skills">
-      <h2 class="animated-text"><span class="letters">Skills</span></h2>
-      <div class="skills-grid">
-        <!-- Programming Languages -->
-        <div>
-          <i class="devicon-cplusplus-plain colored" title="C++"></i>
-          <span class="skill-name">C++</span>
-        </div>
-        <div>
-          <i class="devicon-java-plain colored" title="Java"></i>
-          <span class="skill-name">Java</span>
-        </div>
-        <div>
-          <i class="devicon-python-plain" title="Python"></i>
-          <span class="skill-name">Python</span>
-        </div>
-        <div>
-          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-          <span class="skill-name">JavaScript</span>
-        </div>
-        <div>
-          <i class="devicon-dart-plain colored" title="Dart"></i>
-          <span class="skill-name">Dart</span>
-        </div>
-        <!-- Frameworks & Tools -->
-        <div>
-          <i class="devicon-flutter-plain colored" title="Flutter"></i>
-          <span class="skill-name">Flutter</span>
-        </div>
-        <div>
-          <i class="devicon-fastapi-plain colored" title="FastAPI"></i>
-          <span class="skill-name">FastAPI</span>
-        </div>
-        <div>
-          <i class="devicon-html5-plain colored" title="HTML"></i>
-          <span class="skill-name">HTML</span>
-        </div>
-        <div>
-          <i class="devicon-css3-plain colored" title="CSS"></i>
-          <span class="skill-name">CSS</span>
-        </div>
-        <div>
-          <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-          <span class="skill-name">Node.js</span>
-        </div>
-        <!-- Databases -->
-        <div>
-          <i class="devicon-mysql-plain colored" title="MySQL"></i>
-          <span class="skill-name">MySQL</span>
-        </div>
-        <div>
-          <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-          <span class="skill-name">PostgreSQL</span>
-        </div>
-        <div>
-          <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-          <span class="skill-name">MongoDB</span>
-        </div>
-        <div>
-          <i class="devicon-firebase-plain colored" title="Firebase"></i>
-          <span class="skill-name">Firebase</span>
-        </div>
-        <!-- Version Control -->
-        <div>
-          <i class="devicon-git-plain colored" title="Git"></i>
-          <span class="skill-name">Git</span>
-        </div>
-        <div>
-          <i class="devicon-github-original" title="GitHub"></i>
-          <span class="skill-name">GitHub</span>
-        </div>
-      </div>
-    </section>
+    <main id="main">
+      <!-- ────────────────  HERO  ──────────────── -->
+      <section class="hero" id="top">
+        <div class="wrap hero-inner">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Software Engineer Intern @ Zluri · Bengaluru
+          </p>
 
-    <section id="projects">
-      <h2 class="animated-text"><span class="letters">Projects</span></h2>
-      <div class="rainbow-text">
-        <h3>Jan Aushadhi Sarthak</h3>
-        <p>
-          A mobile application that helps patients find generic medicine
-          alternatives from Jan Aushadhi stores by parsing medical prescriptions
-          using OCR technology.
-        </p>
-        <a
-          href="https://github.com/kunal7236/jan_aushadhi_sarthak"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://youtu.be/bdGntc3mU3g"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Demo Video</a
-        >
-      </div>
-      <div class="rainbow-text">
-        <h3>IPTV App</h3>
-        <p>
-          An IPTV streaming application built with Flutter. Stream live TV
-          channels with professional video controls and an intuitive user
-          interface.
-        </p>
-        <a
-          href="https://github.com/kunal7236/iptv_player"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://youtube.com/shorts/LNQ2E4kYZsk?feature=share"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Demo Video</a
-        >
-      </div>
-      <div class="rainbow-text">
-        <h3>Musify</h3>
-        <p>
-          A full-featured music app built in Flutter. Supports online song
-          search, streaming, background playback, lock screen controls, offline
-          downloads (320Kbps), lyrics, loop-repeat mode and more.
-        </p>
-        <a
-          href="https://github.com/kunal7236/Musify"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://youtube.com/shorts/NpMFO8_OAzg?feature=share"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Demo Video</a
-        >
-      </div>
-      <div class="rainbow-text">
-        <h3>Easy Rail App</h3>
-        <p>
-          Easy Rail provides real-time train information, seat availability, PNR
-          status, and live train tracking - all in one beautiful, user-friendly
-          interface.
-        </p>
-        <a
-          href="https://github.com/kunal7236/easy_rail_app"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://www.youtube.com/shorts/q-T9eZis8eU"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Demo Video</a
-        >
-      </div>
-      <div class="rainbow-text">
-        <h3>Weather App</h3>
-        <p>
-          A weather application that provides real-time weather information for
-          any city worldwide. Built with Material Design 3 and dark theme for a
-          modern user experience.
-        </p>
-        <a
-          href="https://github.com/kunal7236/Weather-App"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        <a
-          href="https://www.youtube.com/shorts/tHZVERkG7b4"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Demo Video</a
-        >
-      </div>
-    </section>
+          <h1>Kunal Kashyap</h1>
 
-    <section id="about">
-      <h2 class="animated-text"><span class="letters">About Me</span></h2>
-      <p id="about-text" class="rainbow-text">
-        Detail-oriented Computer Science student (CGPA 9.16) with hands-on
-        experience in Flutter, FastAPI, and large-scale API development. Solved
-        1000+ DSA problems, rated 1761 on Leetcode. Passionate about building
-        efficient, scalable applications.
-      </p>
-    </section>
+          <p class="lede">
+            Final-year Computer Science undergraduate at BIT Mesra, currently
+            building enterprise frontend at
+            <strong>Zluri</strong> — where I owned the frontend for a
+            drag-and-drop email template builder used by enterprise admins to
+            brand every product notification. I like problems that span the
+            whole stack: React and TypeScript at work, Python data pipelines and
+            self-hosted APIs on my own time.
+          </p>
 
-    <section id="coding-profiles">
-      <h2 class="animated-text">
-        <span class="letters">Coding Profiles</span>
-      </h2>
-      <div class="profiles-container">
-        <a
-          href="https://leetcode.com/u/kunal7236/"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-code"></i> Leetcode</a
-        >
-        <a
-          href="https://github.com/kunal7236"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://www.geeksforgeeks.org/user/kunal7236/"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-terminal"></i> GFG</a
-        >
-        <a
-          href="https://www.naukri.com/code360/profile/therealkunal"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-laptop-code"></i> Code360</a
-        >
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:kunalkashyap277@gmail.com">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i> Get in
+              touch
+            </a>
+            <a
+              class="btn"
+              href="https://github.com/kunal7236"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/kunal-kashyap-bitmesra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
+
+          <dl class="stats">
+            <div class="stat">
+              <dt>CGPA</dt>
+              <dd>9.18<span class="stat-sub">/10</span></dd>
+            </div>
+            <div class="stat">
+              <dt>DSA problems solved</dt>
+              <dd>1000<span class="stat-sub">+</span></dd>
+            </div>
+            <div class="stat">
+              <dt>LeetCode rating</dt>
+              <dd>1761</dd>
+            </div>
+            <div class="stat">
+              <dt>GeeksforGeeks rating</dt>
+              <dd>2021</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ────────────────  EXPERIENCE  ──────────────── -->
+      <section class="section" id="experience">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-label">01 — Experience</p>
+            <h2>Where I've worked</h2>
+          </div>
+
+          <article class="role">
+            <div class="role-meta">
+              <p class="role-date">Jan 2026 — Present</p>
+              <p class="role-place">Bengaluru, Karnataka · On-site</p>
+            </div>
+
+            <div class="role-body">
+              <h3>
+                Software Engineer Intern
+                <span class="role-org">· Zluri</span>
+              </h3>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>React.js</li>
+                <li>TypeScript</li>
+                <li>Redux Toolkit</li>
+                <li>GrapesJS</li>
+                <li>Node.js</li>
+                <li>JSONata</li>
+              </ul>
+
+              <ul class="bullets">
+                <li>
+                  <strong>Notification Customisation</strong> — owned the
+                  frontend end-to-end for a drag-and-drop email template builder
+                  (GrapesJS) that lets enterprise admins brand the header,
+                  content and footer of every product notification with dynamic
+                  variables, removing engineering effort from every template
+                  change. Spanned <strong>65 files</strong> and
+                  <strong>7,600+ lines</strong>.
+                </li>
+                <li>
+                  Enabled organisations to send those notifications from
+                  <strong>their own email domain</strong> instead of Zluri's —
+                  sender/reply-to configuration and domain validation, with a
+                  send-test flow to preview templates before going live; a
+                  recurring enterprise ask that improved email deliverability
+                  and trust.
+                </li>
+                <li>
+                  <strong>JSONata custom fields (full-stack)</strong> — made
+                  text custom fields computable from JSONata expressions via a
+                  CodeMirror formula editor with live preview and server-side
+                  validation, letting admins derive field values without
+                  engineering support.
+                </li>
+                <li>
+                  Built a backend trigger that tracks <strong>SLA breaches</strong>
+                  on DMS requests automatically as Slack alerts, replacing manual
+                  monitoring of overdue items; also shipped the ISPM
+                  monitor-creation wizard and reusable dashboard components, each
+                  covered by Jest / React Testing Library tests.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ────────────────  PROJECTS  ──────────────── -->
+      <section class="section" id="projects">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-label">02 — Projects</p>
+            <h2>Things I've built</h2>
+          </div>
+
+          <!-- Featured -->
+          <article class="project project-featured">
+            <div class="project-head">
+              <div>
+                <p class="project-kicker">Featured</p>
+                <h3>JanAushadhi Sarthak</h3>
+              </div>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Flutter</li>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>SQLite</li>
+                <li>Raspberry Pi</li>
+                <li>GitHub Actions</li>
+              </ul>
+            </div>
+
+            <p class="project-summary">
+              An end-to-end system that makes India's generic-medicine data
+              actually usable — an automated pipeline that scrapes the official
+              JanAushadhi portal, a self-hosted API serving it, and a Flutter
+              app on top.
+            </p>
+
+            <ul class="bullets">
+              <li>
+                Built an automated data pipeline that authenticates with the
+                official JanAushadhi portal, streams government PDFs in-memory
+                and parses their tables using <strong>pdfplumber</strong> with
+                coordinate-tracking strategies — eliminating manual downloads
+                and producing clean datasets of
+                <strong>20,700+ store locations</strong> and
+                <strong>2,400+ generic medicines</strong> with drug codes and
+                MRP.
+              </li>
+              <li>
+                Automated a weekly sync with GitHub Actions that rebuilds
+                indexed SQLite databases and CSV snapshots, versions them in Git
+                for week-over-week change tracking, and pushes a run report (row
+                counts, status, duration) through a Telegram bot.
+              </li>
+              <li>
+                Designed and <strong>self-hosted</strong> the resulting FastAPI
+                service on a <strong>Raspberry Pi</strong>, syncing the
+                generated databases via a weekly cron and exposing medicine
+                search (by drug code or generic name), Kendra lookup (by
+                pincode, state, district or Kendra code) and a health endpoint —
+                indexes tuned for sub-second queries on low-power hardware.
+              </li>
+              <li>
+                Developed the Flutter client on the API with flexible store
+                discovery, colour-coded availability and pricing indicators,
+                one-tap calling and Google Maps navigation, and a persistent
+                cart that saves medicine lists as reusable drafts across
+                sessions.
+              </li>
+              <li>
+                Shipped the app through a CI/CD workflow that auto-bumps the
+                version and publishes split-per-ABI and universal signed APKs to
+                GitHub Releases, with sanitized error handling that routes
+                server-side failures to an in-app support page.
+              </li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                class="btn btn-sm"
+                href="https://github.com/kunal7236/kendra-data-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-gears" aria-hidden="true"></i> Data Engine
+              </a>
+              <a
+                class="btn btn-sm"
+                href="https://jan-api.kunalka.me/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-plug" aria-hidden="true"></i> Live API
+              </a>
+              <a
+                class="btn btn-sm"
+                href="https://github.com/kunal7236/jan_aushadhi_sarthak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i> App
+              </a>
+            </div>
+          </article>
+
+          <!-- Grid -->
+          <div class="project-grid">
+            <article class="project">
+              <h3>IPTV Player</h3>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>M3U8</li>
+              </ul>
+              <p>
+                A live-TV app streaming <strong>150 channels</strong> via
+                real-time M3U8 parsing, with a custom player supporting 5 aspect
+                ratios, fullscreen and rotation, auto-hiding controls, and a
+                tap-to-unlock overlay that prevents accidental touches.
+              </p>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/kunal7236/iptv_player"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="link"
+                  href="https://youtube.com/shorts/LNQ2E4kYZsk?feature=share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Musify</h3>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Flutter</li>
+                <li>Dart</li>
+              </ul>
+              <p>
+                A full-featured music player with online search and streaming,
+                background playback and lock-screen controls, 320 kbps offline
+                downloads, synced lyrics and loop-repeat modes.
+              </p>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/kunal7236/Musify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="link"
+                  href="https://youtube.com/shorts/NpMFO8_OAzg?feature=share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Easy Rail</h3>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Flutter</li>
+                <li>REST APIs</li>
+              </ul>
+              <p>
+                Real-time train information in one place — seat availability,
+                PNR status and live train tracking, wrapped in a clean,
+                single-purpose interface.
+              </p>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/kunal7236/easy_rail_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="link"
+                  href="https://www.youtube.com/shorts/q-T9eZis8eU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Weather App</h3>
+              <ul class="tag-row" aria-label="Technologies used">
+                <li>Flutter</li>
+                <li>Material 3</li>
+              </ul>
+              <p>
+                Real-time weather for any city worldwide, built on Material
+                Design 3 with a dark-first theme and a focus on legible,
+                at-a-glance forecast data.
+              </p>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/kunal7236/Weather-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+                <a
+                  class="link"
+                  href="https://www.youtube.com/shorts/tHZVERkG7b4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ────────────────  SKILLS  ──────────────── -->
+      <section class="section" id="skills">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-label">03 — Skills</p>
+            <h2>What I work with</h2>
+          </div>
+
+          <div class="skills">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <ul class="tag-row">
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Dart</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <ul class="tag-row">
+                <li>React.js</li>
+                <li>Redux Toolkit</li>
+                <li>RTK Query</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Backend &amp; Databases</h3>
+              <ul class="tag-row">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>FastAPI</li>
+                <li>REST APIs</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Mobile</h3>
+              <ul class="tag-row">
+                <li>Flutter</li>
+                <li>Dart</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools &amp; Practices</h3>
+              <ul class="tag-row">
+                <li>Git</li>
+                <li>GitHub Actions</li>
+                <li>Jest</li>
+                <li>React Testing Library</li>
+                <li>Postman</li>
+                <li>Linux</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Fundamentals</h3>
+              <ul class="tag-row">
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Operating Systems</li>
+                <li>OOP</li>
+                <li>DBMS</li>
+                <li>Computer Networks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ────────────────  EDUCATION + ACHIEVEMENTS  ──────────────── -->
+      <section class="section" id="education">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-label">04 — Background</p>
+            <h2>Education &amp; achievements</h2>
+          </div>
+
+          <div class="two-col">
+            <div>
+              <ul class="timeline">
+                <li>
+                  <p class="timeline-date">2022 — 2026</p>
+                  <h3>B.Tech, Computer Science &amp; Engineering</h3>
+                  <p class="timeline-org">
+                    Birla Institute of Technology, Mesra, Ranchi
+                  </p>
+                  <p class="timeline-note">CGPA 9.18 / 10</p>
+                </li>
+                <li>
+                  <p class="timeline-date">2019 — 2021</p>
+                  <h3>CBSE Class 12</h3>
+                  <p class="timeline-org">
+                    Ramakrishna Mission Vidyapith, Deoghar
+                  </p>
+                  <p class="timeline-note">95.4%</p>
+                </li>
+                <li>
+                  <p class="timeline-date">2018 — 2019</p>
+                  <h3>ICSE Class 10</h3>
+                  <p class="timeline-org">Victoria Boys' School, Kurseong</p>
+                  <p class="timeline-note">92.8%</p>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul class="bullets bullets-plain">
+                <li>
+                  SGPA of <strong>9+</strong> in 7 of 8 semesters.
+                </li>
+                <li>
+                  Solved <strong>1000+</strong> DSA and SQL problems across
+                  LeetCode, GeeksforGeeks and Code360.
+                </li>
+                <li>
+                  Rated <strong>1761</strong> on LeetCode and
+                  <strong>2021</strong> on GeeksforGeeks.
+                </li>
+                <li>
+                  Ranked <strong>44</strong> in GFG Weekly 178,
+                  <strong>60</strong> in GFG Weekly 169, and
+                  <strong>1318</strong> of 21,000+ in LeetCode Weekly 455.
+                </li>
+                <li>
+                  Executive member, <strong>Firebolt Racing</strong> (BIT Mesra)
+                  — instrumented ATV performance measurement and ran an Arduino
+                  workshop for 30 freshers.
+                </li>
+              </ul>
+
+              <div class="profile-links">
+                <a
+                  class="link"
+                  href="https://leetcode.com/u/kunal7236/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LeetCode</a
+                >
+                <a
+                  class="link"
+                  href="https://www.geeksforgeeks.org/user/kunal7236/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GeeksforGeeks</a
+                >
+                <a
+                  class="link"
+                  href="https://www.naukri.com/code360/profile/therealkunal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Code360</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ────────────────  CONTACT  ──────────────── -->
+      <section class="section section-contact" id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-label">05 — Contact</p>
+            <h2>Let's talk</h2>
+          </div>
+
+          <p class="contact-lede">
+            Open to software engineering roles and interesting problems. The
+            fastest way to reach me is email.
+          </p>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:kunalkashyap277@gmail.com">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">kunalkashyap277@gmail.com</span>
+            </a>
+            <a class="contact-card" href="tel:+919508544908">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 95085 44908</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/kunal-kashyap-bitmesra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">kunal-kashyap-bitmesra</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://github.com/kunal7236"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">kunal7236</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://x.com/KashyapK257"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <span class="contact-label">X</span>
+              <span class="contact-value">@KashyapK257</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://t.me/NinjaApache"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+              <span class="contact-label">Telegram</span>
+              <span class="contact-value">@NinjaApache</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <p>© <span id="year">2026</span> Kunal Kashyap</p>
+        <p class="footer-note">Built with plain HTML, CSS and JavaScript.</p>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2 class="animated-text"><span class="letters">Contact</span></h2>
-      <div class="contact-container">
-        <a
-          href="mailto:kunalkashyap277@gmail.com"
-          class="btn btn-large"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fas fa-envelope"></i> Email Me</a
-        >
-        <a
-          href="https://www.linkedin.com/in/kunal-kashyap-bitmesra/"
-          class="btn btn-large"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-        <a
-          href="https://x.com/KashyapK257"
-          class="btn btn-large"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fab fa-twitter"></i> Twitter(X)</a
-        >
-        <a
-          href="https://t.me/NinjaApache"
-          class="btn btn-large"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fab fa-telegram"></i> Telegram</a
-        >
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Kunal Kashyap. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
