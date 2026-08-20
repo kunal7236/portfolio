@@ -1,9 +1,16 @@
-# Portfolio
 
-A modern, animated portfolio website built with HTML, CSS, and JavaScript. Features dark theme, animated headings, skill icons, project showcase, and contact links.
+Personal portfolio — plain HTML, CSS and JavaScript. 
 
-## Files
+```
+index.html     markup + all content
+style.css      design tokens in :root, then component sections
+script.js      sticky nav, mobile menu, scroll reveal, scroll-spy
+portfolio.jpg  favicon
+CNAME          custom domain for GitHub Pages
+```
 
-- `index.html`: Main webpage structure and content.
-- `style.css`: All styles, dark theme, animations, and responsive design.
-- `script.js`: Animates headings and interactive effects.
+
+## Notes
+
+Fonts (Inter, JetBrains Mono) and icons (Font Awesome) load from CDNs.
+Respects `prefers-reduced-motion`. Deployed via GitHub Pages.
